@@ -1,0 +1,346 @@
+<html>
+	<head>
+	<title>MyWork</title>
+		<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+		<!--<meta http-equiv="refresh" content="30">    每过30秒刷新一次本页面-->
+		<style type="text/css">
+			TD.menu{
+				font-family:Comic Sans MS;
+				font-size:18px;
+				color=black;
+			}
+
+			TD.topmenu{
+				font-family:Comic Sans MS;
+				font-size:16px;
+				font-weight=bold;
+				width:20%;
+				background-color=#336666;
+				padding: 6px;
+				border-style: solid;
+				border-color: darkred;
+/*				border-color: #999999;*/
+
+			}
+
+			TD.content{
+				font-family:Comic Sans MS, Verdana, Arial, Helvetica, sans-serif;
+				font-size:16px;
+				font-weight=bold;
+				color="#FFFFFF";
+				width:20%;
+				padding: 6px;
+				border-style: solid;
+			}
+
+			TD.content2{
+				font-family:Comic Sans MS, Arial;
+				font-size:16px;
+				color=#707070;
+			}
+
+			p.a{
+				font-family:Comic Sans MS;
+				font-size:28px;
+				font-weight=bold;
+				color=#00CC00;
+			}
+
+			p.b{
+				font-family:Comic Sans MS;
+				font-size:12px;
+				font-weight=bold;
+				color=#99ffcc;
+			}
+
+			table.t{
+				border-color:white;
+				width:60%;
+				border-width:0px;
+				border-collapse: collapse;
+				border-spacing: 3px 10px；
+				padding: 8px;
+				border-style: solid;
+				border-color: #999999;
+			}
+
+			table.a{
+				border-color:yellow;
+				width:60%;
+				border-width:0px;
+				border-collapse: collapse;
+				border-spacing: 3px 10px;
+			}
+
+			table.b{
+				border-color:#aabbcc;
+				width:60%;
+				border-width:0px;
+				border-collapse: collapse;
+				border-spacing: 3px 10px;
+				padding: 8px;
+			}
+
+			table.c{
+				border-color:red;
+				width:60%;
+				border-width:0px;
+				border-collapse: collapse;
+				border-spacing: 3px 10px;
+			}
+
+			tr,td{border-color:#abcdef; border-collapse:collapse}
+			a:link{text-decoration: none;color: black;}
+			a:visited{text-decoration: none;color: black;}
+			a:hover{text-decoration: underline;color:orchid;}
+			a:active{text-decoration: none;color: #00CC00;}
+		</style>
+		<SCRIPT language=javascript>
+
+			function showTime()
+			{
+				var date = new Date();
+
+				CurrentTime.innerText = date.getYear()+ "-" + 
+							(((date.getMonth() + 1) < 10)? "0" + (date.getMonth() + 1) : (date.getMonth() + 1)) + "-" +
+							((date.getDate() < 10)? "0" + date.getDate() : date.getDate()) + "      " +
+							((date.getHours() < 10)? "0" + date.getHours() : date.getHours()) + ":" +
+							((date.getMinutes() < 10)? "0" + date.getMinutes() : date.getMinutes()) + ":" +
+							((date.getSeconds() < 10)? "0" + date.getSeconds() : date.getSeconds());
+				window.setTimeout("showTime()", 1000)
+			}
+
+
+			function TableShow(table, max_table)
+			{
+				var i;
+				var Table = new Array(max_table);
+
+				for (i = 0; i <= (max_table - 2); i ++)
+				{
+					Table[i] = document.getElementById('table' + String(i));
+				}
+
+				for (i = 1; i <= (max_table - 2); i ++)
+				{
+					if (i == table)
+					{
+						Table[i].style.display = "block";
+					}
+					else
+					{
+						Table[i].style.display = "none";
+					}
+				}
+
+				if (table == 10)
+				{
+					for (i = 1; i <= (max_table - 2); i ++)
+					{
+						Table[i].style.display = "block";
+					}
+				}
+			}
+
+		</SCRIPT>
+	</head>
+
+	<body bgcolor=white leftmargin="22" topmargin="22">
+
+<!--A Clock
+		<p class=a id="CurrentTime">
+			<SCRIPT language=javascript>
+				showTime();
+			</SCRIPT>
+		</p>
+-->
+<!--Top Menu-->
+<!--
+		<table class="t" height="20" border="1" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td class="topmenu"><a href="javascript:TableShow(1, 11)">NEWS</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(2, 11)">STUDY</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(3, 11)">INFO</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(8, 11)">ZDM</a></td>
+				<td class="topmenu"><a href="#liqiang" target=_blank>BAIDU</a></td>
+			</tr>
+			<tr>
+				<td class="topmenu"><a href="javascript:TableShow(4, 11)">BBS</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(5, 11)">RESOURCE</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(6, 11)">MAIL</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(9, 11)">PT</a></td>
+				<td class="topmenu"><a href="javascript:TableShow(7, 11)">ME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:TableShow(10, 10)">**</a></td>
+			</tr>
+		</table>
+-->
+		<table class="t" height="20" border="1" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td class="topmenu" colspan="4" align="middle"><a name="me">NextVPU</a></td>
+				<td class="topmenu" colspan="1" align="middle"><a href="#menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+			</tr>
+			<tr>
+				<td class="topmenu"><a href="http://mail.nextvpu.com" target=_blank>Mail</a></td> <!-- qiang.li/L*Q****_**** -->
+				<td class="topmenu"><a href="http://gerrit.nextvpu.com" target=_blank>Gerrit</a></td>
+				<td class="topmenu"><a href="http://support.nextvpu.com" target=_blank>JIRA</a></td>
+				<td class="topmenu"><a href="http://wiki.nextvpu.com" target=_blank>WIKI</a></td>
+				<td class="topmenu"><a href="ftp://ftp.nextvpu.com" target=_blank>FTP</a></td> <!-- liqiang/L*q****5678 -->
+			</tr>
+			<tr>
+				<td class="topmenu"><a href="http://www.nextvpu.com/" target=_blank>NextVPU</a></td>
+				<td class="topmenu"><a href="http://192.168.100.30:8081" target=_blank>Gerrit_IP</a></td>
+				<td class="topmenu"><a href="" target=_blank>*</a></td>
+				<td class="topmenu"><a href="" target=_blank>*</a></td>
+				<td class="topmenu"><a href="https://translate.google.cn/" target=_blank>GoogleTranslate</a></td>
+			</tr>
+		</table>
+
+<!--Blank-->
+		<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr><br><br><br></tr>
+		</table>
+
+<!--Me-->
+		<table class="b" border="1" cellspacing="0" cellpadding="0" align="center">
+<!--
+		<table class="b" border="1" cellspacing="0" cellpadding="0" id="table7" style="display:none" align="center">
+-->
+			<tr>
+				<td class="menu" colspan="4" align="middle"><a name="work">Work</a></td>
+				<td class="menu" colspan="1" align="middle"><a href="#menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="https://github.com/" target=_blank>GitHub</a></td> <!--liqxf/PWD1/57589850@qq.com-->
+				<td class="content"><a href="https://www.githubs.cn/" target=_blank>GitHubBBS</a></td>
+				<td class="content"><a href="http://www.codeforge.cn/" target=_blank>CodeForge</a></td> <!--liqxf/PWD2/57589850@qq.com-->
+				<td class="content"><a href="https://zybuluo.com" target=_blank>作业部落</a></td> <!--liqxf/PWD1/57589850@qq.com-->
+				<td class="content"><a href="https://docs.qq.com" target=_blank>腾讯文档</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="http://pan.baidu.com" target=_blank>BaiDuYun</a></td> <!-- lqxiaobei/PWD1 -->
+				<td class="content"><a href="http://www.weiyun.com" target=_blank>WeiYun</a></td>
+				<td class="content"><a href="http://vdisk.weibo.com/" target=_blank>VDisk</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="http://photobucket.com/?link=topmenu" target=_blank>PhotoBucket</a></td> <!-- lqxiaobei@gmail.com/forgot pwd -->
+			</tr>
+			<tr>
+				<td class="content"><a href="https://caiyun.feixin.10086.cn/" target=_blank>移动彩云</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="http://189.cn/" target=_blank>电信欢go</a></td>
+				<td class="content"><a href="http://cloud.189.cn/main.action" target=_blank>天翼云</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+			</tr>
+		</table>
+
+<!--Blank-->
+		<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr><br><br><br></tr>
+		</table>
+
+<!--Mail-->
+		<table class="b" border="1" cellspacing="0" cellpadding="0" align="center">
+<!--
+		<table class="b" border="1" cellspacing="0" cellpadding="0" id="table6" style="display:none" align="center">
+-->
+			<tr>
+				<td class="menu" colspan="4" align="middle"><a name="mail">Mail</a></td>
+				<td class="menu" colspan="1" align="middle"><a href="#menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="http://mail.google.com" target=_blank>GMAIL</a></td>
+				<td class="content"><a href="http://www.126.com" target=_blank>126MAIL</a></td>
+				<td class="content"><a href="http://mail.sina.com.cn" target=_blank>SINAMAIL</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="https://mail.qq.com" target=_blank>QQMAIL</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="https://outlook.live.com/" target=_blank>OutLook</a></td>
+				<td class="content"><a href="http://hotmail.com/" target=_blank>HotMail</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+			</tr>
+		</table>
+
+<!--Blank-->
+		<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr><br><br><br></tr>
+		</table>
+
+<!--Study-->
+		<table class="b" border="1" cellspacing="0" cellpadding="0" align="center">
+<!--
+		<table class="b" border="1" cellspacing="0" cellpadding="0" id="table2" style="display:none" align="center">
+-->
+			<tr>
+				<td class="menu" colspan="4" align="middle"><a name="study">Study</a></td>
+				<td class="menu" colspan="1" align="middle"><a href="#menu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="http://www.citiy.com/mainfrm/index.php" target=_blank>Citiy</a></td>
+				<td class="content"><a href="http://www.sinosip.net/phpBB2/index.php" target=_blank>SinoSip</a></td>
+				<td class="content"><a href="http://bbs.chinagk.org/index.asp" target=_blank>ChinaVoIP</a></td>
+				<td class="content"><a href="http://www.netexpert.cn/" target=_blank>网络协议分析</a></td>
+				<td class="content"><a href="http://bbs.bc-cn.net/viewthread.php?action=printable&tid=120538" target=_blank>编程论坛</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="http://bbs.cdbest.net/" target=_blank>光存储</a></td>
+				<td class="content"><a href="http://benyouhui.it168.com/index.php" target=_blank>本友会</a></td>
+				<td class="content"><a href="http://www.sharecenter.net/forum-91-1.html" target=_blank>菊花技术</a></td>
+				<td class="content"><a href="http://www.mybr.org/index.php" target=_blank>小熊技术在线</a></td>
+				<td class="content"><a href="http://www.eimhe.com/bbs/index.php" target=_blank>美河学习</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="http://www.mixfog.com/temp/diy.html" target=_blank>Discuz7学习</a></td>
+				<td class="content"><a href="http://www.abab123.com/Index.html" target=_blank>视频教程下载</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="http://www.toodoc.com/" target=_blank>EBOOK下载</a></td>
+				<td class="content"><a href="http://bbs3.chinaunix.net/forumdisplay.php?fid=131" target=_blank>网络技术文档</a></td>
+			</tr>
+			<tr>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+				<td class="content"><a href="" target=_blank>*</a></td>
+			</tr>
+		</table>
+
+<!--Blank-->
+		<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr><br><br><br></tr>
+		</table>
+
+<!--For New-->
+<!--LiQ-->
+		<table class="b" height="20" border="1" cellspacing="0" cellpadding="0" align="center">
+			<tr>
+				<td class="topmenu" colspan="5" align="middle"><p class="b" align="left">
+				夫君子之行：静以修身，俭以养德；非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也。非学无以广才，非志无以成学。慆慢则不能励精，险躁则不能治性。年与时驰，意与岁去，遂成枯落，多不接世，悲守穷庐，将复何及？
+				</p></td>
+			</tr>
+		</table>
+
+<!--Blank-->
+		<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+			<tr><br><br></tr>
+		</table>
+<!--End-->
+
+	</body>   
+</html>
+
+
