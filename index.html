@@ -260,6 +260,157 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liqxf.github.io/2020/03/29/02-11-linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Henry Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/liqxf.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一束光华">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/03/29/02-11-linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">02-11-linux常用命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-29T21:08:08+08:00">
+                2020-03-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h2><h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><ul>
+<li>参考资料： <a href="https://www.linuxprobe.com/linux-unix-find.html" target="_blank" rel="noopener">Linux/Unix重要find命令详解</a></li>
+<li>find（查找）主要沿着文件层次（目录）结构依次向下遍历，匹配符合条件的文件，可以附带执行相应的操作选项，默认的操作结果是打印出符合条件的文件与目录。</li>
+<li>列出给定目录(base_path)下所有的文件和子目录<ul>
+<li>find base_path -print</li>
+</ul>
+</li>
+<li>根据文件名和正则表达式进行搜索，使用选项 -name或-iname<ul>
+<li>find base_path -name ‘xxx’ -print</li>
+<li>find base_path -iname ‘xxx’ -print</li>
+</ul>
+</li>
+<li>否定参数，可以用 ！排除所指定到的模式<ul>
+<li>find base_path ! -name ‘xxx’ -print</li>
+</ul>
+</li>
+<li>基于目录深度的搜索<ul>
+<li>maxdepth / mindepth</li>
+</ul>
+</li>
+<li>基于文件类型搜索<ul>
+<li>使用-type可以指定搜索的文件类型， linux/unix将所有的的一切都视为文件（文件类型有：普通文件f，目录d，符号链接 l，字符设备c，块设备b，套接字s，FIFO-p），使用 -type选项我们能够对文件类型进行过滤。</li>
+</ul>
+</li>
+</ul>
+<h3 id="xargs"><a href="#xargs" class="headerlink" title="xargs"></a>xargs</h3><ul>
+<li>参考资料： <a href="https://www.jb51.net/article/44720.htm" target="_blank" rel="noopener">xargs命令使用详解</a>  ;  <a href="https://www.jb51.net/article/102397.htm" target="_blank" rel="noopener">Linux xargs命令详细介绍</a></li>
+<li>find base_path -maxdepth 1 -mindepth 1 -type d | xargs -n1 -i cp -rf {} dest_path</li>
+</ul>
+<h3 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h3><h3 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h3><ul>
+<li>参考资料： <a href="https://www.jianshu.com/p/6564c647c780" target="_blank" rel="noopener">tree命令</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://liqxf.github.io/2020/03/19/05-03-Search-and-tools/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1669,133 +1820,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liqxf.github.io/2020/03/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Henry Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/liqxf.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一束光华">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/14/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-14T09:39:21+08:00">
-                2020-03-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.<br>更多使用指南，请打开正文。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2020/03/14/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
 
 
           </div>
@@ -1843,7 +1874,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1901,19 +1932,19 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://liqxf.github.io/2020/03/15/00-01-todo/" target="_blank" title="ToDo">
+                    <a href="2020/03/15/00-01-todo/" target="_blank" title="ToDo">
                       
                         <i class="fa fa-fw fa-globe"></i>ToDo</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://liqxf.github.io/2020/03/14/00-00-file-index/" target="_blank" title="Index">
+                    <a href="2020/03/14/00-00-file-index/" target="_blank" title="Index">
                       
                         <i class="fa fa-fw fa-globe"></i>Index</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://liqxf.github.io/2020/03/19/05-03-Search-and-tools/" target="_blank" title="Search">
+                    <a href="2020/03/19/05-03-Search-and-tools/" target="_blank" title="Search">
                       
                         <i class="fa fa-fw fa-globe"></i>Search</a>
                   </span>
